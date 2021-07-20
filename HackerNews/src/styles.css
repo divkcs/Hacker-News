@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 10pt;
+    color: #4d4d4d;
+}
+
+#main {
+    min-width: 796px;
+    max-width: 1300px;
+    margin: 5px auto;
+    text-align: center;
+    background-color: #f6f6ef;
+}
+
+a:link,
+a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 750px) {
+    #main {
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        -webkit-text-size-adjust: none;
+    }
+    span.pagetop {
+        display: block;
+        margin: 3px 5px;
+        font-size: 12px;
+        line-height: normal
+    }
+    span.pagetop b {
+        font-size: 15px;
+        display: block;
+        text-align: start;
+    }
+    #main header{
+        padding: 5px 0px 5px;
+    }
+    #main a.logo{
+        padding: 10px;
+    }
+}
+
+
+.arrow {
+    width: 10px;
+    height: 10px;
+    border: 0px;
+    margin: 2px 5px 5px;
+    background: url('./assets/arrow.gif') no-repeat;
+}

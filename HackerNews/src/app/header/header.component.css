@@ -1,0 +1,30 @@
+header {
+    padding: 5px 2px;
+    background: #ff6600;
+}
+
+.pagetop {
+    color: #222222;
+}
+
+.appname {
+    font-size: 12pt;
+    margin-right: 1em;
+}
+
+.header-right {
+    text-align: right;
+    padding-right: 4px;
+}
+
+.header-left {
+    text-align: left;
+}
+
+.topsel a:link, .topsel a.active {
+    color: #ffffff;
+}
+a.logo{
+    float: left;
+    padding-right: 5px;
+}

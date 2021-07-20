@@ -1,0 +1,20 @@
+<div *ngIf="comment">
+    <div class="meta" [class.meta-collapse]="collapse">
+        <a [ngStyle]="{'visibility': collapse ? 'hidden' : 'visible' }">
+            <div class="arrow"></div>
+        </a>
+        <a href="">{{comment.by ? comment.by : ' ---- '}}</a>
+        <span class="time">{{comment.time}}</span>
+        <span class="collapse" (click)="collapse = !collapse">[{{collapse ? (comment?.childrens?.length ? comment?.childrens?.length : 0) + ' more' : '-'}}]</span>
+    </div>
+    <div class="comment-tree">
+        <div [hidden]="collapse">
+            <p class="comment-text" [innerHTML]="comment.text"></p>
+            <ul class="subtree">
+                <li *ngFor="let subComment of comment.childrens">
+                    <app-comment [comment]="subComment"></app-comment>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

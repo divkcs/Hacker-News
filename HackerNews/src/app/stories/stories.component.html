@@ -1,0 +1,33 @@
+<div class="list">
+    <table border="0" cellpadding="0" cellspacing="0" class="storylist">
+        <tbody>
+            <div *ngFor="let story of storyList;let i=index" class="story">
+                <tr>
+                    <td valign="top" class="storytitle">
+                        <span>{{i+1}}.</span>
+                    </td>
+                    <td valign="top" class="links">
+                        <a>
+                            <div class="arrow"></div>
+                        </a>
+                    </td>
+                    <td class="storytitle">
+                        <a href="{{story.url}}" target="_blank">{{story.title}}</a>
+                        <span>
+                            (<a>{{story.url | domain}}</a>)
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td class="secondrow">
+                        <span>{{story.score}} point</span> by
+                        <a href="Javascript:void(0)">{{story.by}}</a>
+                        <span class="time">{{story.time}}</span> | 
+                        <a (click)="gotoComments(story)">comments</a>
+                    </td>
+                </tr>
+            </div>
+        </tbody>
+    </table>
+</div>

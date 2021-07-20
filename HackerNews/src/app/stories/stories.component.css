@@ -1,0 +1,48 @@
+.storytitle {
+    font-size: 10pt;
+    color: #828282;
+    overflow: hidden;
+    text-align: left;
+}
+
+td {
+    font-size: 11pt;
+    color: #828282;
+}
+
+div.list {
+    padding: .5rem 1rem;
+}
+
+.secondrow {
+    font-size: 9pt;
+    color: #828282;
+    text-align: left;
+}
+
+.secondrow a:link, .secondrow a:visited {
+    color: #828282;
+}
+
+.secondrow a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.story {
+    margin: 1em 0;
+}
+
+.comhead {
+    font-size: 10pt;
+    color: #828282;
+}
+span.time{
+    padding: 0 3px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+    div.list{
+        padding: .5rem;
+    }
+}
